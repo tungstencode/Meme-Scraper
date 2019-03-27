@@ -3,25 +3,55 @@ from bs4 import BeautifulSoup
 import time
 from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
-url = "https://9gag.com"
+import sys
+url = "https://knowyourmeme.com/memes/trollface"
+
+if len(sys.argv)>1:
+	url=sys.argv[1]
+	print url
+else:
+	print 'maybe try a link'
 
 options=Options()
 options.headless=True
 browser=webdriver.Firefox(options=options)
 browser.get(url)
-# browser.setJavascriptEnabled(true)
-# browser.set_window_position(0, 0)
-for i in range(3):
-	browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-	time.sleep(0.05)
-
 content = browser.page_source
-
 soup = BeautifulSoup(content,features="lxml")
-# print soup.prettify()
-pictures=soup.find_all('picture')
-print pictures
-print pictures.pop().find('img')['src']
-# print dir(pictures)
 browser.close()
 browser.quit()
+
+#find pictures
+print 'PICTURES BRO:'
+temp=soup.find('section',{"class":"bodycopy"}).find_all('center')
+imgs=[]
+for center in temp:
+	pictures=center.find_all('img')
+	for img in pictures:
+		imgs.append(img)
+
+for img in imgs:
+	print img['data-src']
+
+
+#find tags
+print 'TAGS BRO:'
+tags=soup.find("dl", {"id": "entry_tags"}).find("dd").find_all('a')
+for element in tags:
+	print element.string
+
+
+
+
+
+#-----------------------------------
+
+
+# print pictures.pop().find('img')['src']
+# print dir(pictures)
+# print soup.prettify()
+# browser.setJavascriptEnabled(true)
+# browser.set_window_position(0, 0)
+# for i in range(3):
+# 	browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+# 	time.sleep(0.05)
