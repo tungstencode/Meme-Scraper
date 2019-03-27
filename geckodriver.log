@@ -1,0 +1,87 @@
+1553689889720	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.oCde4l5IISE7"
+*** You are running in headless mode.
+1553689890056	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553689890056	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553689890056	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553689892233	Marionette	INFO	Listening on port 34485
+1553689892382	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 27393, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1553689904382	Marionette	INFO	Stopped listening on port 34485
+[Parent 27393, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1553690100131	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.zXFmFfOA1wH4"
+*** You are running in headless mode.
+1553690100456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690100456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690100456	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690102454	Marionette	INFO	Listening on port 36665
+1553690102537	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 28006, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1553690116677	Marionette	INFO	Stopped listening on port 36665
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+[Parent 28006, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1553690189054	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WtT2VgcN8JyE"
+*** You are running in headless mode.
+1553690189374	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690189375	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690189375	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690191458	Marionette	INFO	Listening on port 34213
+1553690191560	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 28433, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: https://assets-9gag-fun.9cache.com/s/fab0aa49/2dcc27c0fb96fef92d3623135c85771baed65342/static/dist/web6/js/video-player.js, line 8: TypeError: document.getElementById(...) is null
+1553690204228	Marionette	INFO	Stopped listening on port 34213
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+JavaScript error: , line 0: AbortError: The fetching process for the media resource was aborted by the user agent at the user's request.
+1553690239967	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.wiDseLuGIcJO"
+*** You are running in headless mode.
+1553690240319	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690240320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690240320	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690242502	Marionette	INFO	Listening on port 42273
+1553690242573	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 28827, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1553690256148	Marionette	INFO	Stopped listening on port 42273
+[Parent 28827, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1553690315866	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.WAuVsqQOevzo"
+*** You are running in headless mode.
+1553690316166	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690316167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690316167	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690318323	Marionette	INFO	Listening on port 45829
+1553690318375	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 29217, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1553690329256	Marionette	INFO	Stopped listening on port 45829
+1553690369627	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.8DQtDu6ZyKFT"
+*** You are running in headless mode.
+1553690369949	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690369949	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690369950	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690371944	Marionette	INFO	Listening on port 33067
+1553690372034	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 29643, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: https://assets-9gag-fun.9cache.com/s/fab0aa49/2dcc27c0fb96fef92d3623135c85771baed65342/static/dist/web6/js/video-player.js, line 8: TypeError: document.getElementById(...) is null
+1553690385690	Marionette	INFO	Stopped listening on port 33067
+1553690434649	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fGTWs3abkzvw"
+*** You are running in headless mode.
+1553690434966	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690434966	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690434967	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690437082	Marionette	INFO	Listening on port 42823
+1553690437156	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 30021, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: https://assets-9gag-fun.9cache.com/s/fab0aa49/2dcc27c0fb96fef92d3623135c85771baed65342/static/dist/web6/js/video-player.js, line 8: TypeError: document.getElementById(...) is null
+1553690445846	Marionette	INFO	Stopped listening on port 42823
+[Parent 30021, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+1553690491363	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-headless" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.0CXrhkQY7EbM"
+*** You are running in headless mode.
+1553690491698	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1553690491698	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1553690491698	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1553690493648	Marionette	INFO	Listening on port 41577
+1553690493676	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 30401, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+JavaScript error: https://assets-9gag-fun.9cache.com/s/fab0aa49/2dcc27c0fb96fef92d3623135c85771baed65342/static/dist/web6/js/video-player.js, line 8: TypeError: document.getElementById(...) is null
+1553690505574	Marionette	INFO	Stopped listening on port 41577
+[Parent 30401, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
