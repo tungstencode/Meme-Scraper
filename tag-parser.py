@@ -21,21 +21,20 @@ browser=webdriver.Firefox(options=options)
 browser.get(url)
 # browser.setJavascriptEnabled(true)
 # browser.set_window_position(0, 0)
-for i in range(5):
+for i in range(3):
 	browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-	time.sleep(0.1)
+	time.sleep(0.05)
 
 content = browser.page_source
-browser.close()
-browser.quit()
+
 soup = BeautifulSoup(content,features="lxml")
 # print soup.prettify()
 pictures=soup.find_all('picture')
 print pictures
-print pictures[0].img
-print type(pictures[0].img)
-print pictures.count(pictures)
-
+print pictures.pop().find('img')['src']
+# print dir(pictures)
+browser.close()
+browser.quit()
 
 
 # ------------------------------------------------------
