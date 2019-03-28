@@ -29,20 +29,21 @@ for k in range(5):
 	content = memesource.page_source
 
 	memes = BeautifulSoup(content,features="lxml")
-	print 'ajung aici 4'
+	print 'ajung aici 3'
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
 	print 'getting html for the '+k+' time'
 
 	# rulez alea 10 prin downloader
 	for urlB in urls:
 		url="https://knowyourmeme.com"+urlB['href']
-		print 'ajung aici 5'
+		print 'ajung aici 4'
 		dire=url.split("/")[-1]
 		try:
 			os.makedirs(dire)
 		except:
 			   print 'we have '+dire+' already, next meme'
 			   continue
+		print 'ajung aici 5'
 		browser=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
 		print 'ajung aici 6'
 		browser.get(url)
