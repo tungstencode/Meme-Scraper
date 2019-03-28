@@ -17,20 +17,26 @@ memesource.get("https://knowyourmeme.com/memes/popular")
 
 # optimized
 #fac asta de 10 ori
-for k in range(2):
+for k in range(5):
 	# scot html din 10 falea
+	print 'ajung aici 1'
 	for i in range(5):
 		memesource.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 		scrolltime=random.uniform(1,3)
 		print 'waiting to scroll for '+str(scrolltime)
 		time.sleep(scrolltime)
+	print 'ajung aici 2'
 	content = memesource.page_source
+
 	memes = BeautifulSoup(content,features="lxml")
+	print 'ajung aici 4'
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
 	print 'getting html for the '+k+' time'
+
 	# rulez alea 10 prin downloader
 	for urlB in urls:
 		url="https://knowyourmeme.com"+urlB['href']
+		print 'ajung aici 5'
 		dire=url.split("/")[-1]
 		try:
 			os.makedirs(dire)
@@ -38,7 +44,9 @@ for k in range(2):
 			   print 'we have '+dire+' already, next meme'
 			   continue
 		browser=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
+		print 'ajung aici 6'
 		browser.get(url)
+		print 'ajung aici 7'
 		content = browser.page_source
 		soup = BeautifulSoup(content,features="lxml")
 		print 'getting data from '+url
