@@ -31,7 +31,7 @@ for k in range(5):
 	memes = BeautifulSoup(content,features="lxml")
 	print 'ajung aici 3'
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
-	print 'getting html for the '+k+' time'
+	print 'getting html for the '+str(k)+' time'
 
 	# rulez alea 10 prin downloader
 	for urlB in urls:
