@@ -14,7 +14,8 @@ firefox_profile=webdriver.FirefoxProfile()
 firefox_profile.set_preference('permissions.default.image',2)
 memesource=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
 memesource.get("https://knowyourmeme.com/memes/popular")
-
+browser=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
+print 'pornim motoarele'
 # optimized
 #fac asta de 10 ori
 for k in range(5):
@@ -27,7 +28,6 @@ for k in range(5):
 		time.sleep(scrolltime)
 	print 'ajung aici 2'
 	content = memesource.page_source
-
 	memes = BeautifulSoup(content,features="lxml")
 	print 'ajung aici 3'
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
@@ -44,16 +44,11 @@ for k in range(5):
 			   print 'we have '+dire+' already, next meme'
 			   continue
 		print 'ajung aici 5'
-		browser=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
-		print 'ajung aici 6'
 		browser.get(url)
-		print 'ajung aici 7'
+		print 'ajung aici 6'
 		content = browser.page_source
 		soup = BeautifulSoup(content,features="lxml")
-		print 'getting data from '+url
-		browser.close()
-		browser.quit()
-		print 'killed '+url+', now filtering.'
+		print 'getting data from '+url+', now filtering.'
 		#find pictures
 		temp=soup.find('section',{"class":"bodycopy"}).find_all('center')
 		imgs=[]
@@ -81,7 +76,8 @@ for k in range(5):
 		print 'waiting to load url for '+str(waittime)
 		time.sleep(waittime)
 	#mai scot 10 dalea
-
+browser.close()
+browser.quit()
 memesource.close()
 memesource.quit()
 
