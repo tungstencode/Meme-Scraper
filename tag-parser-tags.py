@@ -6,6 +6,7 @@ from selenium import webdriver
 from selenium.webdriver.firefox.options import Options
 import sys
 import unicodecsv as csv
+import random
 #happens once
 options=Options()
 options.headless=True
@@ -20,7 +21,9 @@ for k in range(2):
 	# scot html din 10 falea
 	for i in range(5):
 		memesource.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-		time.sleep(random.uniform(1,3))
+		scrolltime=random.uniform(1,3)
+		print 'waiting to scroll for '+str(scrolltime)
+		time.sleep(scrolltime)
 	content = memesource.page_source
 	memes = BeautifulSoup(content,features="lxml")
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
@@ -65,7 +68,9 @@ for k in range(2):
 		    writer.writerow(tagstocsv)
 		csvFile.close()
 		print dire+' meme was saved.'
-		time.sleep(random.uniform(1,3))
+		waittime=random.uniform(1,3)
+		print 'waiting to load url for '+str(waittime)
+		time.sleep(waittime)
 	#mai scot 10 dalea
 
 memesource.close()
