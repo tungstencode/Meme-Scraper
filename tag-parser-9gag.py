@@ -9,7 +9,7 @@ browser=webdriver.Firefox(options=options)
 browser.get(url)
 # browser.setJavascriptEnabled(true)
 # browser.set_window_position(0, 0)
-for i in range(40):
+for i in range(20):
 	browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 	time.sleep(0.05)
 content = browser.page_source
