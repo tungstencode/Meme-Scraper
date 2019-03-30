@@ -36,7 +36,6 @@ for k in range(20):
                         time.sleep(scrolltime)
 	print 'ajung aici 2'
 	content = memesource.page_source
-	del content
 	memes = BeautifulSoup(content,features="lxml")
 	del content
 	print 'ajung aici 3'
