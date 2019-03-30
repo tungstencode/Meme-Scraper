@@ -18,7 +18,7 @@ browser=webdriver.Firefox(firefox_profile=firefox_profile,options=options)
 print 'pornim motoarele'
 # optimized
 #fac asta de 10 ori
-for k in range(5):
+for k in range(20):
 	# scot html din 10 falea
 	print 'ajung aici 1'
 	if k <1:
@@ -51,7 +51,7 @@ for k in range(5):
 	print 'si sarim de '+str(sarituri)
 	# rulez alea 10 prin downloader
 	for urlB in urls:
-		if sarituri>0:
+		if sarituri>1:
 			sarituri=sarituri-1
 			continue
 		url="https://knowyourmeme.com"+urlB['href']
@@ -106,20 +106,7 @@ browser.close()
 browser.quit()
 memesource.close()
 memesource.quit()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print 'DONE'
 
 
 
