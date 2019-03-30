@@ -7140,3 +7140,5 @@ console.error: BroadcastService:
   Stack:
     remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:190:13
 
+[Parent 14203, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
+[Parent 13285, Gecko_IOThread] WARNING: pipe error (66): Connection reset by peer: file /build/firefox-8l_Snv/firefox-66.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 357
