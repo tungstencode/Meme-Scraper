@@ -37,12 +37,14 @@ for k in range(20):
 	print 'ajung aici 2'
 	content = memesource.page_source
 	memes = BeautifulSoup(content,features="lxml")
+	del content
 	print 'ajung aici 3'
 	if k>0:
 		nrurls=len(urls)
 	else:
 		nrurls=0
 	urls=memes.find('tbody',{"class":"entry-grid-body infinite"}).find_all('a',{"class":"photo"})
+	del memes
 	sarituri=0
 	if nrurls<len(urls):
 		sarituri=nrurls
@@ -70,6 +72,7 @@ for k in range(20):
 			continue
 		content = browser.page_source
 		soup = BeautifulSoup(content,features="lxml")
+		del content
 		print 'getting data from '+url+', now filtering.'
 #		browser.close()
 		#find pictures
@@ -107,10 +110,3 @@ browser.quit()
 memesource.close()
 memesource.quit()
 print 'DONE'
-
-
-
-
-
-
-
